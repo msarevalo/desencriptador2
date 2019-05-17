@@ -6,14 +6,14 @@ file='primos.txt'
 primos = np.loadtxt(file, delimiter=',', skiprows=0)
 
 abc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "_"]
-comparar = ["esto", "esta", "ella", "echo", "este", "esas", "esos", "esa", "eso", "las", "los", "ellos", "algo", "solo", "sola", "que"]
+comparar = ["esto", "esta", "ella", "echo", "este", "esas", "esos", "esa", "eso", "las", "los", "ellos", "algo", "solo", "sola", "que", "por", "porque"]
 
 base =  614656
 acumulado = 0
 valor = 0
 encriptado = ""
 
-primeraLinea = "qpjbozzjrelzo_pyqnfnnycurcfggtqatsjsw_mpdepbot_w"
+primeraLinea = "hyufo_enyrjiygxzyxlndlpzlyoil vjegbzmbdrbovjzy q_cpzsmvjiklmdcsragxz"
 
 primeraLinea = primeraLinea.replace(" ", "_")
 
