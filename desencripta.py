@@ -1,17 +1,19 @@
 import numpy as np
+import sys
 
 file='primos.txt'
 
 primos = np.loadtxt(file, delimiter=',', skiprows=0)
 
 abc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "_"]
+comparar = ["esto", "esta", "ella", "echo", "este", "esas", "esos", "esa", "eso", "las", "los", "la", "el", "ellos", "algo", "solo", "sola", "que", "en", "de"]
 
 base =  614656
 acumulado = 0
 valor = 0
 encriptado = ""
 
-primeraLinea = "kzzwdyy ñkbs uyawekwtblwhñyaeinañeuwdvya"
+primeraLinea = "qpjbozzjrelzo_pyqnfnnycurcfggtqatsjsw_mpdepbot_w"
 
 primeraLinea = primeraLinea.replace(" ", "_")
 
@@ -48,15 +50,15 @@ while continua==1:
 
                     acumulado = acumulado + valor
                 #print(acumulado)
-#                b= 601367
-#                menosa=376919
+                b= 601367
+                menosa=376919
 #                e = 0
 #                e = acumulado - 601367
 #                e = e * 376919
 #                e = e % base
                 e = 0
                 e = acumulado - b
-                e = e * b
+                e = e * menosa
                 e = e % base
 
                 #print(e)
@@ -68,14 +70,16 @@ while continua==1:
 
                 encriptado = encriptado + abc[letra1] + "" + abc[letra2] + "" + abc[letra3] + "" + abc[letra4]
                 encriptado = encriptado.replace("_", " ")
+            
+            prueba = encriptado.split()
+            #print(prueba)
 
-                if encriptado.find("teoria")>=0:
-                    print(encriptado)
-                    conti = int(input("\nSi te sirve la desencripcion: "))
-                    if(conti==1):
-                        continua=0
-                        print("Las claves son a-1: ", menosa, " y b ", b, " texto final: ")
-                        print(encriptado)
-                        break
-                        break
-                        break
+            for p in range(0, len(comparar)-1,1):
+                if comparar[p] in prueba:
+	                print(encriptado)
+	                conti = int(input("\nSi te sirve la desencripcion: "))
+	                if(conti==1):
+	                    print("\nLas claves son a-1: ", menosa, " y b ", b, " texto final: ")
+	                    print(encriptado)
+	                    continua=2	
+	                    break
