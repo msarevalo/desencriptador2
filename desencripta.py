@@ -50,8 +50,8 @@ while continua==1:
 
                     acumulado = acumulado + valor
                 #print(acumulado)
-                b= 601367
-                menosa=376919
+#                b= 601367
+#                menosa=376919
 #                e = 0
 #                e = acumulado - 601367
 #                e = e * 376919
