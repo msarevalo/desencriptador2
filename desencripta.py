@@ -21,12 +21,12 @@ continua=1
 
 while continua==1:
     for z in range(len(primos)-1, 0, -1):
+    	if z%1000 == 0:
+                print(primos[z], " ", aa)
         for aa in range((int)(base/2), (int)(base), 1):
             encriptado=""
             if aa%1000 == 0:
                 print(aa)
-            if z%1000 == 0:
-                print(primos[z], " ", aa)
             menosa = (int)(primos[z])
             b = aa
             for x in range(0, len(primeraLinea), 4):
