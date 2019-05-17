@@ -6,7 +6,7 @@ file='primos.txt'
 primos = np.loadtxt(file, delimiter=',', skiprows=0)
 
 abc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "_"]
-comparar = ["esto", "esta", "ella", "echo", "este", "esas", "esos", "esa", "eso", "las", "los", "la", "el", "ellos", "algo", "solo", "sola", "que", "en", "de"]
+comparar = ["esto", "esta", "ella", "echo", "este", "esas", "esos", "esa", "eso", "las", "los", "ellos", "algo", "solo", "sola", "que"]
 
 base =  614656
 acumulado = 0
